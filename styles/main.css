@@ -1,9 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-family: 'Roboto', sans-serif;
 }
 
 body {
   background: #f0f0f5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Ubuntu', sans-serif;
+  color: #322153;
 }
 
 a {
@@ -23,6 +33,7 @@ a {
 }
 
 #page-home div.content header {
+  padding-top: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,5 +61,13 @@ a {
   background-image: url(../assets/log-in.svg);
   width: 20px;
   height: 20px;
+}
+
+#page-home div.content main {
+  max-width: 560px;
+}
+
+#page-home div.content main h1 {
+  font-size: 54px;
 }
 /*# sourceMappingURL=main.css.map */

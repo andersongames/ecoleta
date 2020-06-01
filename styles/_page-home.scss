@@ -9,13 +9,14 @@
         margin: 0 auto;
     
         header {
+            padding-top: 48px;
             display: flex;
             align-items: center;
             justify-content: space-between;
 
             a{
                 display: flex;
-                color: #322153;
+                color: $title-color;
                 font-weight: 700;
 
                 span{
@@ -25,6 +26,14 @@
                     width: 20px;
                     height: 20px;
                 }
+            }
+        }
+
+        main {
+            max-width: 560px;
+
+            h1 {
+                font-size: 54px;
             }
         }
     }
