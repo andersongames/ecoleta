@@ -73,7 +73,7 @@ a {
 }
 
 #page-home div.content main {
-  max-width: 560px;
+  max-width: 540px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
