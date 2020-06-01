@@ -24,7 +24,7 @@ a {
 #page-home {
   height: 100vh;
   background: url("../assets/home-background.svg") no-repeat;
-  background-position: 35vw bottom;
+  background-position: 40vw bottom;
 }
 
 #page-home div.content {
@@ -73,7 +73,7 @@ a {
 }
 
 #page-home div.content main {
-  max-width: 540px;
+  max-width: 560px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
