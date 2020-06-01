@@ -9,6 +9,7 @@ html {
 
 body {
   background: #f0f0f5;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -29,7 +30,15 @@ a {
 #page-home div.content {
   width: 90%;
   max-width: 1100px;
+  height: 100%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #page-home div.content header {
@@ -65,9 +74,105 @@ a {
 
 #page-home div.content main {
   max-width: 560px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #page-home div.content main h1 {
   font-size: 54px;
+}
+
+#page-home div.content main p {
+  font-size: 24px;
+  line-height: 38px;
+  margin-top: 24px;
+}
+
+#page-home div.content main a {
+  width: 100%;
+  max-width: 360px;
+  height: 72px;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+  background-color: #34cb79;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+#page-home div.content main a:hover {
+  background-color: #2fb86e;
+}
+
+#page-home div.content main a span {
+  width: 72px;
+  height: 72px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.08);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#page-home div.content main a span::after {
+  content: "";
+  background-image: url(../assets/search.svg);
+  width: 20px;
+  height: 20px;
+}
+
+#page-home div.content main a strong {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  #page-home {
+    background-position-x: 70vw;
+  }
+  #page-home div.content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  #page-home div.content header a {
+    position: absolute;
+    bottom: 48px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  #page-home main {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */
