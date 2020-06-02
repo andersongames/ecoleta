@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -230,11 +232,88 @@ a {
 
 #page-create-point form {
   background-color: white;
-  margin-top: 80px;
+  margin: 80px auto;
   padding: 64px;
   border-radius: 8px;
   max-width: 730px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+}
+
+#page-create-point form h1 {
+  font-size: 36px;
+}
+
+#page-create-point form fieldset {
+  margin-top: 64px;
+  border: 0;
+}
+
+#page-create-point form fieldset legend {
+  margin-bottom: 40px;
+}
+
+#page-create-point form fieldset legend h2 {
+  font-size: 24px;
+}
+
+#page-create-point form div.field {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 24px;
+}
+
+#page-create-point form div.field label {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+#page-create-point form div.field input, #page-create-point form div.field select {
+  background-color: #f0f0f5;
+  border: 0;
+  padding: 16px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  /*outline: none;*/
+}
+
+#page-create-point form div.field select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+#page-create-point form div.field-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#page-create-point form div.field-group .field + .field {
+  margin-left: 24px;
+}
+
+#page-create-point form button {
+  width: 260px;
+  height: 56px;
+  background-color: #34cb79;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: 0;
+  margin-top: 40px;
+  -webkit-transition: background-color 400ms;
+  transition: background-color 400ms;
+}
+
+#page-create-point form button:hover {
+  background-color: #2fb86e;
 }
 /*# sourceMappingURL=main.css.map */
