@@ -187,4 +187,54 @@ a {
     background-position-y: 100px;
   }
 }
+
+#page-create-point {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#page-create-point header {
+  margin-top: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#page-create-point header a {
+  color: #322153;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#page-create-point header a span {
+  margin-right: 16px;
+  background-image: url(../assets/arrow-left.svg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20px;
+  height: 24px;
+}
+
+#page-create-point form {
+  background-color: white;
+  margin-top: 80px;
+  padding: 64px;
+  border-radius: 8px;
+  max-width: 730px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 /*# sourceMappingURL=main.css.map */
