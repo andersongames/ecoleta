@@ -317,7 +317,7 @@ a {
   background-color: #2fb86e;
 }
 
-#page-create-point form fieldset div.itens-grid {
+#page-create-point form fieldset div.items-grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -325,7 +325,7 @@ a {
   gap: 16px;
 }
 
-#page-create-point form fieldset div.itens-grid li {
+#page-create-point form fieldset div.items-grid li {
   background-color: #f5f5f5;
   list-style: none;
   border: 2px solid #f5f5f5;
@@ -349,11 +349,11 @@ a {
   cursor: pointer;
 }
 
-#page-create-point form fieldset div.itens-grid li img {
+#page-create-point form fieldset div.items-grid li img {
   pointer-events: none;
 }
 
-#page-create-point form fieldset div.itens-grid li span {
+#page-create-point form fieldset div.items-grid li span {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -367,7 +367,7 @@ a {
   pointer-events: none;
 }
 
-#page-create-point form fieldset div.itens-grid li.selected {
+#page-create-point form fieldset div.items-grid li.selected {
   background-color: #e1faec;
   border: 2px solid #34cb79;
 }
