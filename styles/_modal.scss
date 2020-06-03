@@ -9,6 +9,10 @@
     align-items: center;
     transition: 400ms;
 
+    &.hide {
+        display: none;
+    }
+
     div.content {
         color: white;
         width: 420px;
@@ -30,7 +34,7 @@
                 width: 20px;
                 height: 20px;
                 display: flex;
-                font-size: 0.01;
+                font-size: 0.01px;
             }
         }
 
