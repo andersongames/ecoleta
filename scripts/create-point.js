@@ -51,5 +51,10 @@ for (const item of itensToCollect) {
 }
 
 function handleSelectedItem(event) {
-    console.log(event.target)
+    const itemLi = event.target
+
+    //adicionar ou remover classe
+    itemLi.classList.toggle("selected")
+
+    const itemId = itemLi.dataset.id
 }
