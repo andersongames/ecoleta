@@ -475,9 +475,57 @@ a {
   margin-top: 48px;
 }
 
-#page-search-results main img {
+#page-search-results main h4 {
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+  margin-bottom: 32px;
+}
+
+#page-search-results main div.cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+#page-search-results main div.cards div.card img {
   width: 100%;
-  height: auto;
+  height: 150px;
+  border-radius: 8px 8px 0 0;
+}
+
+#page-search-results main div.cards div.card h1 {
+  margin-top: 32px;
+  font-size: 36px;
+  line-height: 41px;
+  color: #322153;
+}
+
+#page-search-results main div.cards div.card h3 {
+  margin: 24px 0;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  margin-bottom: 24px;
+  line-height: 34px;
+  color: #34cb79;
+}
+
+#page-search-results main div.cards div.card p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #6c6c80;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  background-color: white;
+  top: 270px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 @media (max-width: 900px) {
