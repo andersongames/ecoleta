@@ -1,0 +1,10 @@
+body::after {
+    content: "";
+    position: fixed;
+    background-color: white;
+    top: 270px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
