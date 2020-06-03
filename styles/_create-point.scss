@@ -120,11 +120,16 @@
                 text-align: center;
                 cursor: pointer;
 
+                img {
+                    pointer-events: none;
+                }
+
                 span {
                     flex: 1;
                     display: flex;
                     align-items: center;
                     color: $title-color;
+                    pointer-events: none;
                 }
 
                 &.selected {

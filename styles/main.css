@@ -349,6 +349,10 @@ a {
   cursor: pointer;
 }
 
+#page-create-point form fieldset div.itens-grid li img {
+  pointer-events: none;
+}
+
 #page-create-point form fieldset div.itens-grid li span {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -360,6 +364,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   color: #322153;
+  pointer-events: none;
 }
 
 #page-create-point form fieldset div.itens-grid li.selected {
