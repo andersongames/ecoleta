@@ -20,11 +20,35 @@
             align-items: center;
         }
     }
+
+    #page-search-results main {
+
+            div.cards {
+                grid-template-columns: 1fr 1fr;
+
+                div.card img{
+                    height: 200px;
+                }
+            }
+    }
 }
 
 @media (min-width: 1700px) {
     #page-home{
         background-position-x: 40vw;
+    }
+}
+
+@media (max-width: 720px) {
+    #page-search-results main {
+
+        div.cards {
+            grid-template-columns: 1fr;
+
+            div.card img{
+                height: 250px;
+            }
+        }
     }
 }
 

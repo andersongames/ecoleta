@@ -26,7 +26,7 @@
     }
 
     main {
-        margin-top: 48px;
+        margin: 48px;
 
         h4 {
             font-family: Roboto, sans-serif;
@@ -44,6 +44,7 @@
                 img {
                     width: 100%;
                     height: 150px;
+                    object-fit: cover;
                     border-radius: 8px 8px 0 0;
                 }
 
