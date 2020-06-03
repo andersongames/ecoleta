@@ -154,101 +154,6 @@ a {
   text-align: center;
 }
 
-#modal {
-  background-color: #0e0a14ef;
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: 400ms;
-  transition: 400ms;
-}
-
-#modal.hide {
-  display: none;
-}
-
-#modal div.content {
-  color: white;
-  width: 420px;
-}
-
-#modal div.content div.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 48px;
-}
-
-#modal div.content div.header h1 {
-  color: white;
-  font-size: 36px;
-  line-height: 42px;
-}
-
-#modal div.content div.header a {
-  background-image: url(../assets/x.svg);
-  width: 20px;
-  height: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 0.01px;
-}
-
-#modal div.content form label {
-  font-size: 14px;
-  line-height: 16px;
-  display: block;
-  margin-bottom: 8px;
-}
-
-#modal div.content form div.field {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#modal div.content form div.field input {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  background-color: #f0f0f5;
-  border-radius: 8px 0 0 8px;
-  border: 0;
-  padding: 16px 24px;
-  font-size: 16px;
-  color: #6c6c80;
-}
-
-#modal div.content form div.field button {
-  width: 72px;
-  height: 72px;
-  background-color: #34cb79;
-  border: 0;
-  border-radius: 0 8px 8px 0;
-}
-
-#modal div.content form div.field button:hover {
-  background-color: #2fb85e;
-  cursor: pointer;
-}
-
 #page-create-point {
   width: 90%;
   max-width: 1100px;
@@ -429,6 +334,150 @@ a {
 #page-create-point form fieldset div.items-grid li.selected {
   background-color: #e1faec;
   border: 2px solid #34cb79;
+}
+
+#modal {
+  background-color: #0e0a14ef;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+#modal.hide {
+  display: none;
+}
+
+#modal div.content {
+  color: white;
+  width: 420px;
+}
+
+#modal div.content div.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+#modal div.content div.header h1 {
+  color: white;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+#modal div.content div.header a {
+  background-image: url(../assets/x.svg);
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0.01px;
+}
+
+#modal div.content form label {
+  font-size: 14px;
+  line-height: 16px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+#modal div.content form div.field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#modal div.content form div.field input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #f0f0f5;
+  border-radius: 8px 0 0 8px;
+  border: 0;
+  padding: 16px 24px;
+  font-size: 16px;
+  color: #6c6c80;
+}
+
+#modal div.content form div.field button {
+  width: 72px;
+  height: 72px;
+  background-color: #34cb79;
+  border: 0;
+  border-radius: 0 8px 8px 0;
+}
+
+#modal div.content form div.field button:hover {
+  background-color: #2fb85e;
+  cursor: pointer;
+}
+
+#page-search-results {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#page-search-results header {
+  margin-top: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#page-search-results header a {
+  color: #322153;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#page-search-results header a span {
+  margin-right: 16px;
+  background-image: url(../assets/arrow-left.svg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20px;
+  height: 24px;
+}
+
+#page-search-results main {
+  margin-top: 48px;
+}
+
+#page-search-results main img {
+  width: 100%;
+  height: auto;
 }
 
 @media (max-width: 900px) {
