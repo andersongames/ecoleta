@@ -234,7 +234,13 @@ a {
   color: #322153;
 }
 
-#page-create-point form div.field {
+#page-create-point form div.field-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#page-create-point form div.field-group div.field {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -248,12 +254,12 @@ a {
   margin-bottom: 24px;
 }
 
-#page-create-point form div.field label {
+#page-create-point form div.field-group div.field label {
   font-size: 14px;
   margin-bottom: 8px;
 }
 
-#page-create-point form div.field input, #page-create-point form div.field select {
+#page-create-point form div.field-group div.field input, #page-create-point form div.field-group div.field select {
   background-color: #f0f0f5;
   border: 0;
   padding: 16px 24px;
@@ -262,16 +268,10 @@ a {
   /*outline: none;*/
 }
 
-#page-create-point form div.field select {
+#page-create-point form div.field-group div.field select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-}
-
-#page-create-point form div.field-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 #page-create-point form div.field-group .field + .field {
@@ -556,6 +556,15 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  #page-create-point form div.field-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #page-create-point form div.field-group .field + .field {
+    margin-left: 0;
   }
   #page-search-results main div.cards {
     -ms-grid-columns: 1fr 1fr;

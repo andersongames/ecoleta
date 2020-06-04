@@ -21,8 +21,12 @@
         }
     }
 
-    #page-create-point {
-        
+    #page-create-point form div.field-group {
+        flex-direction: column;
+
+        .field + .field{
+            margin-left: 0;
+        }
     }
 
     #page-search-results main {
