@@ -213,10 +213,25 @@ a {
 
 #page-create-point form fieldset legend {
   margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
 }
 
 #page-create-point form fieldset legend h2 {
   font-size: 24px;
+}
+
+#page-create-point form fieldset legend span {
+  font-size: 14px;
+  color: #322153;
 }
 
 #page-create-point form div.field {
