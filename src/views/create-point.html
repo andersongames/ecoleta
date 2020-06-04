@@ -1,21 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Anderson Games">
-    <meta name="description" content="Encontre pontos de coleta de resíuos de forma eficiente">
-    <meta name="keywords" content="ecoleta, resíduos, coleta, lixo">
+{% extends "layout.html" %}
+{% set pageId = "page-create-point" %}
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/main.css">
-
+{% block title %}
     <title>Criar um ponto de coleta</title>
-</head>
-<body>
+{% endblock title %}
 
-    <div id="page-create-point">
-
+{% block content %}
         {% include "partials/page-header.html" %}
 
             <form action="">
@@ -109,9 +99,11 @@
                 <button type="submit">Cadastrar ponto de coleta</button>
 
             </form>
-
-    </div><!--page-home-->
+{% endblock content %}
     
+{% block scripts %}
     <script src="/scripts/create-point.js"></script>
+{% endblock scripts %}
+
 </body>
 </html>

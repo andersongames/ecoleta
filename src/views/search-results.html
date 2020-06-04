@@ -1,22 +1,15 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Anderson Games">
-    <meta name="description" content="Encontre pontos de coleta de resíuos de forma eficiente">
-    <meta name="keywords" content="ecoleta, resíduos, coleta, lixo">
+{% extends "layout.html" %}
+{% set pageId = "page-search-results" %}
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/main.css">
+{% block styles %}
     <link rel="stylesheet" href="/styles/search-results.css">
-
+{% endblock styles %}
+    
+{% block title %}
     <title>Resultado da pesquisa</title>
-</head>
-<body>
+{% endblock title %}
 
-    <div id="page-search-results">
-
+{% block content %}
         {% include "partials/page-header.html" %}
 
             <main>
@@ -50,8 +43,7 @@
                </div><!--cards-->
 
             </main>
-
-    </div><!--page-home-->
+{% endblock content %}
 
 </body>
 </html>
