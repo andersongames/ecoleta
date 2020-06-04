@@ -60,8 +60,20 @@
     }
 }
 
+@media (max-width: 770px) {
+    #page-create-point form fieldset div.items-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 @media (max-height: 760px) {
     #page-home{
         background-position-y: 100px;
+    }
+}
+
+@media (max-width: 540px) {
+    #page-create-point form fieldset div.items-grid {
+        grid-template-columns: 1fr;
     }
 }
