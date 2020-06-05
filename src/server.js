@@ -7,6 +7,9 @@ const db = require("./database/db")
 //configurar pasta pública
 server.use(express.static("public"))
 
+//habilitar o uso do req.body
+server.use(express.urlencoded({ extended: true }))
+
 //utilizando template engines
 const nunjucks = require("nunjucks")
 nunjucks.configure("src/views", {
@@ -24,9 +27,20 @@ server.get("/", (req, res) => {
 server.get("/create-point", (req, res) => {
     
     //req.query: query strings da url
-    console.log(req.query)
+    //console.log(req.query)
 
     return res.render("create-point.html")
+})
+
+server.post("/savepoint", (req, res) => {
+
+    //req.body: o corpo do formulário
+    //console.log(req.body)
+
+    //inserir dados no banco de dados
+    
+
+    return res.send("ok")
 })
 
 //search-results
