@@ -10,7 +10,7 @@ Ecoleta é de um marketplace de coleta de resíduos, onde empressas de coleta ca
 :recycle: :recycle: :recycle:
 
 ### Home
-![Home](/images/ecoleta-home.png)
+![Home](/images/print-ecoleta-home.png)
 
 ## Tecnologias :computer:
 ### Front-end
