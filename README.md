@@ -31,7 +31,7 @@ Ecoleta é de um marketplace de coleta de resíduos, onde empressas de coleta ca
 - [x] Dia 3
 - [x] Dia 4
 - [x] Dia 5
-### Beyond
+### Além
 - [x] Tornar a página de cadastro responsiva
 - [x] Separar as rotas do server.js
 - [ ] Criar página para erro no cadastro
