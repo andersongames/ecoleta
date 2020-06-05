@@ -22,6 +22,10 @@ server.get("/", (req, res) => {
 
 //create-point
 server.get("/create-point", (req, res) => {
+    
+    //req.query: query strings da url
+    console.log(req.query)
+
     return res.render("create-point.html")
 })
 
