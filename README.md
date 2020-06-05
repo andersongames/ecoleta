@@ -35,5 +35,6 @@ Ecoleta é de um marketplace de coleta de resíduos, onde empressas de coleta ca
 - [x] Tornar a página de cadastro responsiva
 - [x] Separar as rotas do server.js
 - [ ] Criar página para erro no cadastro
+- [ ] Aprimorar os arquivos SASS
 
 :rocket: :rocket: :rocket:
