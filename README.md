@@ -13,7 +13,7 @@ Ecoleta é de um marketplace de coleta de resíduos, onde empressas de coleta ca
 ![Home](/images/ecoleta-home.png)
 
 ## Tecnologias :computer:
-### Font-end
+### Front-end
 - HTML
 - CSS
 - SASS
