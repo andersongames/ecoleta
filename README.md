@@ -24,3 +24,14 @@ Ecoleta é de um marketplace de coleta de resíduos, onde empressas de coleta ca
 - Node.js
 - SQL
 - SQLlite
+
+## To Do
+- [x] Dia 1
+- [x] Dia 2
+- [x] Dia 3
+- [x] Dia 4
+- [x] Dia 5
+### Beyond
+- [x] Tornar a página de cadastro responsiva
+- [x] Separar as rotas do server.js
+- [ ] Criar página para erro no cadastro
