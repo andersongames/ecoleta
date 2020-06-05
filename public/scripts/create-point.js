@@ -91,5 +91,3 @@ function handleSelectedItem(event) {
     //atualizar o campo escondido com os itens selecionados
     collectedItems.value = selectedItems
 }
-
-module.exports = routes

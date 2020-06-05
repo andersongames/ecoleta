@@ -1,10 +1,15 @@
 //importa somente o módulo de rotas do express
 const { Router } = require("express")
-
 const routes = Router()
+
+const express = require("express")
+//const server = express()
 
 //importar o db
 const db = require("./database/db")
+
+//habilitar o uso do req.body
+routes.use(express.urlencoded({ extended: true }))
 
 //configurar caminhos da aplicação
 //página inicial
@@ -67,7 +72,6 @@ routes.post("/savepoint", (req, res) => {
 //search-results
 routes.get("/search", (req, res) => {
 
-    //
     const search = req.query.search
 
     if(search == "") {

@@ -25,16 +25,4 @@ Ecoleta é de um marketplace de coleta de resíduos, onde empressas de coleta ca
 - SQL
 - SQLlite
 
-## To Do :checkered_flag:
-- [x] Dia 1
-- [x] Dia 2
-- [x] Dia 3
-- [x] Dia 4
-- [x] Dia 5
-### Além
-- [x] Tornar a página de cadastro responsiva
-- [x] Separar as rotas do server.js
-- [ ] Criar página para erro no cadastro
-- [ ] Aprimorar os arquivos SASS
-
 :rocket: :rocket: :rocket:
