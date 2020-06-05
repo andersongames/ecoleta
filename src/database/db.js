@@ -2,7 +2,7 @@
 const sqlite3 = require("sqlite3").verbose()
 
 //iniciar o objeto que irá fazer operações no banco de dados
-const db = new sqlite3.Database("./src/database/dadtabase.db")
+const db = new sqlite3.Database("./src/database/database.db")
 
 module.exports = db
 //utilizar o objeto de banco de daddos pra as operações
@@ -10,7 +10,7 @@ db.serialize(() => {
 
     //com comandos sql eu vou:
     //1. criar uma tabela
-    /*
+/*
     db.run(`
         CREATE TABLE IF NOT EXISTS places (
             id  INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -54,7 +54,7 @@ db.serialize(() => {
         console.log("Cadastrado com sucesso")
         console.log(this)
     }
-    */
+
 
     //db.run(query, values, afterInsertData)
 
