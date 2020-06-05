@@ -38,7 +38,7 @@ server.post("/savepoint", (req, res) => {
     //console.log(req.body)
 
     //inserir dados no banco de dados
-    //2. inserir dados na tabela
+        //2. inserir dados na tabela
     const query = `
     INSERT INTO places (
         image,
@@ -78,8 +78,17 @@ server.post("/savepoint", (req, res) => {
 //search-results
 server.get("/search", (req, res) => {
 
+    //
+    const search = req.query.search
+
+    if(search == "") {
+        //pesquisa vazia
+            //mostrar a página html com os dados do banco de dados
+        return res.render("search-results.html", { total: 0 })
+    }
+
     //pegar os dados ddo banco de dados
-    db.all(`SELECT * FROM places`, function(err, rows) {
+    db.all(`SELECT * FROM places WHERE city LIKE '%${search}%'`, function(err, rows) {
         if(err) {
             return console.log(err)
         }
