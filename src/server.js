@@ -10,7 +10,7 @@ const db = require("./database/db")
 //configurar pasta pública
 server.use(express.static("public"))
 
-//configurar as rotas
+//configurar as rotas/
 server.use(routes)
 /*
 //habilitar o uso do req.body
