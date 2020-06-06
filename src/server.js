@@ -10,9 +10,9 @@ const db = require("./database/db")
 //configurar pasta pública
 server.use(express.static("public"))
 
-//configurar as rotas/
-server.use(routes)
-/*
+//configurar as rotas
+//server.use(routes)
+
 //habilitar o uso do req.body
 server.use(express.urlencoded({ extended: true }))
 
@@ -107,6 +107,6 @@ nunjucks.configure("src/views", {
             return res.render("search-results.html", { places: rows, total: total })
         })
     })
-*/
+
 //ligar o servidor
 server.listen(process.env.PORT ||  3000)
