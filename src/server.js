@@ -11,7 +11,7 @@ const db = require("./database/db")
 server.use(express.static("public"))
 
 //configurar as rotas
-server.use(routes)
+//server.use(routes)
 
 //habilitar o uso do req.body
 server.use(express.urlencoded({ extended: true }))
@@ -22,7 +22,7 @@ nunjucks.configure("src/views", {
     express: server,
     noCache: true
 })
-/*
+
 //configurar caminhos da aplicação
     //página inicial
     server.get("/", (req, res) => {
@@ -107,6 +107,6 @@ nunjucks.configure("src/views", {
             return res.render("search-results.html", { places: rows, total: total })
         })
     })
-*/
+
 //ligar o servidor
 server.listen(process.env.PORT ||  3000)
