@@ -56,12 +56,12 @@ routes.post("/savepoint", (req, res) => {
 
     function afterInsertData(err) {
         if(err) {
-            console.log(err)
-            return res.send("Erro no cadastro")
+            //console.log(err)
+            return res.render("create-point.html", { error: true })
         }
 
-        console.log("Cadastrado com sucesso")
-        console.log(this)
+        //console.log("Cadastrado com sucesso")
+        //console.log(this)
 
         return res.render("create-point.html", { saved: true })
     }
