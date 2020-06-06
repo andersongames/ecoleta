@@ -4,7 +4,7 @@
   "description": "Projeto Ecoleta, desenvolvido na Next Level Week da Rocketseat.",
   "main": "src/server.js",
   "scripts": {
-    "start": "nodemon src/server.js"
+    "start": "src/server.js"
   },
   "repository": {
     "type": "git",
