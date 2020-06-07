@@ -10,8 +10,8 @@ const db = require("./database/db")
 //configurar pasta pública
 server.use(express.static("public"))
 
-//configurar as rotas
-server.use(routes)
+//configurar as rotas //TESTE COM ROTAS
+//server.use(routes)
 
 //habilitar o uso do req.body
 server.use(express.urlencoded({ extended: true }))
@@ -22,14 +22,14 @@ nunjucks.configure("src/views", {
     express: server,
     noCache: true
 })
-/*
+
 //configurar caminhos da aplicação
     //página inicial
     server.get("/", (req, res) => {
         return res.render("index.html")
     })
     
-        //create-point
+    //create-point
     server.get("/create-point", (req, res) => {
         
         //req.query: query strings da url
@@ -81,7 +81,7 @@ nunjucks.configure("src/views", {
         db.run(query, values, afterInsertData)
     })
     
-        //search-results
+    //search-results
     server.get("/search", (req, res) => {
     
         const search = req.query.search
@@ -107,6 +107,6 @@ nunjucks.configure("src/views", {
             return res.render("search-results.html", { places: rows, total: total })
         })
     })
-*/
+
 //ligar o servidor
-server.listen(3000)
+server.listen(process.env.PORT ||  3000)

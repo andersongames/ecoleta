@@ -1,9 +1,11 @@
+//TESTE COM ROTAS
+
 //importa somente o módulo de rotas do express
 const { Router } = require("express")
 const routes = Router()
 
 const express = require("express")
-//const server = express()
+//const routes = express()
 
 //importar o db
 const db = require("./database/db")
