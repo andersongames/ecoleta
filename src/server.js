@@ -29,7 +29,7 @@ nunjucks.configure("src/views", {
         return res.render("index.html")
     })
     
-        //create-point
+    //create-point
     server.get("/create-point", (req, res) => {
         
         //req.query: query strings da url
@@ -81,7 +81,7 @@ nunjucks.configure("src/views", {
         db.run(query, values, afterInsertData)
     })
     
-        //search-results
+    //search-results
     server.get("/search", (req, res) => {
     
         const search = req.query.search
