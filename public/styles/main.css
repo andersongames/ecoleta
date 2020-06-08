@@ -669,18 +669,47 @@ a {
 }
 
 @media (max-width: 540px) {
+  #page-home div.content main h1 {
+    font-size: 38px;
+  }
+  #page-home div.content main p {
+    font-size: 22px;
+  }
   #page-create-point form fieldset div.items-grid {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
 }
 
-@media (max-width: 540px) {
-  #page-home div.content main h1 {
-    font-size: 38px;
+@media (max-width: 480px) {
+  header {
+    margin-top: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  #page-home div.content main p {
-    font-size: 22px;
+  header a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header a span {
+    margin-right: 16px;
+    background-image: url(../assets/arrow-left.svg);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 20px;
+    height: 24px;
   }
 }
 /*# sourceMappingURL=main.css.map */
