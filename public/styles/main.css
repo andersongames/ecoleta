@@ -682,34 +682,14 @@ a {
 }
 
 @media (max-width: 480px) {
-  header {
-    margin-top: 48px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  #page-create-point header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  header a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  header a span {
-    margin-right: 16px;
-    background-image: url(../assets/arrow-left.svg);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 20px;
-    height: 24px;
+  #page-create-point header a {
+    margin: 64px 0 48px 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
