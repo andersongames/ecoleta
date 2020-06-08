@@ -284,6 +284,9 @@ a {
   display: -ms-flexbox;
   display: flex;
   margin-top: 28px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #page-create-point form div.button button {
