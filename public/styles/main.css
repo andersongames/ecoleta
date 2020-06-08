@@ -691,5 +691,17 @@ a {
   #page-create-point header a {
     margin: 64px 0 48px 0;
   }
+  #page-create-point fieldset legend {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #page-create-point fieldset legend span {
+    margin: 24px 0 18px 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

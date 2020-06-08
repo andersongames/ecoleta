@@ -102,11 +102,22 @@
 }
 
 @media (max-width: 480px) {
-    #page-create-point  header {
-        flex-direction: column;
+    #page-create-point {  
+        header {
+            flex-direction: column;
 
-        a {
-            margin: 64px 0 48px 0;
+            a {
+                margin: 64px 0 48px 0;
+            }
+        }
+
+        fieldset legend {
+            display: flex;
+            flex-direction: column;
+
+            span {
+                margin: 24px 0 18px 0;
+            }
         }
     }
 }
