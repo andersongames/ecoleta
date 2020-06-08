@@ -68,12 +68,12 @@ nunjucks.configure("src/views", {
     
         function afterInsertData(err) {
             if(err) {
-                console.log(err)
+                //console.log(err)
                 return res.send("Erro no cadastro")
             }
     
-            console.log("Cadastrado com sucesso")
-            console.log(this)
+            //console.log("Cadastrado com sucesso")
+            //console.log(this)
     
             return res.render("create-point.html", { saved: true })
         }
@@ -100,8 +100,8 @@ nunjucks.configure("src/views", {
     
             const total = rows.length
     
-            console.log("Aqui estão seus registros: ")
-            console.log(rows)
+            //console.log("Aqui estão seus registros: ")
+            //console.log(rows)
             
             //mostrar a página html com os dados do banco de dados
             return res.render("search-results.html", { places: rows, total: total })
