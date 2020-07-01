@@ -46,7 +46,7 @@ nunjucks.configure("src/views", {
         //inserir dados no banco de dados
             //2. inserir dados na tabela
         const query = `
-        INSERT INTO places (
+        INSERT INT places (
             image,
             name,
             address,
@@ -69,7 +69,7 @@ nunjucks.configure("src/views", {
         function afterInsertData(err) {
             if(err) {
                 //console.log(err)
-                return res.send("Erro no cadastro")
+                return res.render("create-point.html", { error: true })
             }
     
             //console.log("Cadastrado com sucesso")
@@ -92,7 +92,7 @@ nunjucks.configure("src/views", {
             return res.render("search-results.html", { total: 0 })
         }
     
-        //pegar os dados ddo banco de dados
+        //pegar os dados do banco de dados
         db.all(`SELECT * FROM places WHERE city LIKE '%${search}%'`, function(err, rows) {
             if(err) {
                 return console.log(err)

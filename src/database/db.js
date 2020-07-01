@@ -58,7 +58,7 @@ db.serialize(() => {
 
     //db.run(query, values, afterInsertData)
 */
-    //3. consultar os dados dad tabela
+    //3. consultar os dados da tabela
     /*
     db.all(`SELECT name FROM places`, function(err, rows) {
         if(err) {
