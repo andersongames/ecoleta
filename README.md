@@ -2,7 +2,7 @@
  
 Projeto **Ecoleta**, desenvolvido na Next Level Week da Rocketseat. :rocket:
 
-## O Projeto
+## A Aplicação
 <a href="https://www.figma.com/file/Byw4X5etg8VCmezueyhzkC/Ecoleta-(Starter)?node-id=136%3A546" target="_blank">Figma</a>
 
 Ecoleta é de um marketplace de coleta de resíduos, onde pode-se cadastrar pontos de coleta para que os usúarios encontrem locais para descartar resíduos.
