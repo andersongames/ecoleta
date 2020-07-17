@@ -46,7 +46,7 @@ nunjucks.configure("src/views", {
         //inserir dados no banco de dados
             //2. inserir dados na tabela
         const query = `
-        INSERT INT places (
+        INSERT INTO places (
             image,
             name,
             address,
