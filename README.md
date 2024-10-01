@@ -1,6 +1,6 @@
-# Projeto Ecoleta
+# Ecoleta
  
-Projeto **Ecoleta**, desenvolvido na Next Level Week da Rocketseat. :rocket:
+Projeto desenvolvido na Next Level Week da Rocketseat. :rocket:
 
 ## A Aplicação
 <a href="https://www.figma.com/file/Byw4X5etg8VCmezueyhzkC/Ecoleta-(Starter)?node-id=136%3A546" target="_blank">Figma</a>
